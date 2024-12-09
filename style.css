@@ -1,0 +1,552 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 15px;
+    background-color: #18363f;
+    
+    color: aliceblue;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid white;
+}
+header {
+    background-color: #18363f;
+height: 650px;
+}
+
+.headings {
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+    background-color: #18363f;
+
+}
+.headings img{
+    margin-right: 90px;
+    margin-left: 40px;
+}
+.tags{
+    background-color: #18363f;
+    height: 700px;
+}
+.tags nav ul {
+    text-align: center;
+    padding: 0;
+    margin: 10px 0;
+    list-style: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    margin-top: 80px;
+
+    
+}
+
+.tags nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+    color: white;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+.tags nav ul li a {
+    text-decoration: none; /* Remove underlines */
+    color: white; /* Default link color */
+    font-weight: bold;
+}
+
+
+
+
+
+/* Slider Container */
+.slider {
+    width: 1000px;
+    max-width: 100%;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 40px auto;
+}
+
+/* Slides Container */
+.slides {
+    display: flex;
+    width: 200%; /* Twice the width to hold two slides */
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+    margin-bottom: 100%;
+
+}
+
+.slide {
+    flex: 0 0 50%; /* Each slide takes 50% of the container */
+    height: 100%;
+}
+.slide 2 {
+    flex: 0 0 50%;
+    height: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+    display: block;
+}
+/* Radio Buttons (Hidden) */
+input[type="radio"] {
+    display: none;
+}
+
+/* Slider Navigation */
+.nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: white;
+}
+
+.arrow {
+    pointer-events: all;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.arrow:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Slide Navigation Logic */
+#slide1:checked ~ .slides {
+    transform: translateX(0%);
+}
+
+#slide2:checked ~ .slides {
+    transform: translateX(-50%);
+}
+h3{
+    color: black;
+    margin-left: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    margin-top: 120px;
+}
+.list{
+    background-color: white;
+    padding: 20px;
+    height: 200px;
+    width: 100%;
+}
+.products-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: 50px;
+    background-color: white;
+}
+.products2-container {
+    display: flex;
+    gap: 20px;
+    padding: 0px;
+    margin-bottom: 50px;
+    background-color: white;
+}
+
+
+/* Individual Product Card */
+.product {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 40px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    max-width: 300px;
+    
+}
+.product2 {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 40px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    max-width: 300px;
+    margin-left: 25px;
+}
+.product2 img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 10px 0;
+    object-fit: cover;
+}
+.category a{
+    color: black;
+    text-decoration: none;
+
+}
+/* Product Headings */
+
+
+/* Product Image */
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 10px 0;
+    object-fit: cover;
+}
+
+/* Category Link */
+.product .category a {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+
+}
+
+.products-containers {
+    display: flex;
+    gap: 20px;
+
+    padding: 0px;
+    margin-bottom: 50px;
+    background-color: white;
+    width: 100%;
+    height: 50%;
+}
+.product   {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 50px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    max-width: 300px;
+    margin-left: 10px;
+}
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 10px 0;
+    object-fit: cover;
+}
+.features-container {
+    display: flex;
+    padding: 20px;
+    background-color: white;
+  }
+  
+  /* Features List Section */
+  .features-list {
+    width: 50%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+  }
+  
+  .feature-item {
+    background-color: #18363f;
+    color: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .feature-item h3 {
+    font-size: 18px;
+    margin: 0;
+    color: white;
+  }
+  
+  .feature-item p {
+    font-size: 14px;
+    margin: 5px 0;
+    line-height: 1.5;
+  }
+  
+  /* Product Image Section */
+  .product-image-wrapper {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .product-image {
+    max-width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .shop h2 {
+    align-items: center;
+    font-size: 30px;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 500px;  
+  }
+
+  .shop p{
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+margin-left: 50px; 
+color: #333; }
+
+.products-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  /* Product Card */
+  .product-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 18%;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  /* Product Title */
+  .product-title {
+    font-size: 18px;
+    margin: 10px 0;
+    font-weight: bold;
+  }
+  
+  /* Product Image */
+  .product-image {
+    max-width: 100%;
+    border-radius: 10px;
+    margin: 15px 0;
+  }
+  
+  /* Product Description */
+  .product-description {
+    font-size: 14px;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  /* Product Pricing */
+  .product-pricing {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  .old-price {
+    text-decoration: line-through;
+    color: #999;
+    margin-right: 10px;
+  }
+  
+  .new-price {
+    color: black;
+    font-weight: bold;
+  }
+
+  /* Container to center the button */
+.view-all-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5px; /* Adjust as needed */
+    margin-bottom: 200px;
+  }
+  
+  /* Button styling */
+  .view-all-button {
+    background-color: #184e56; /* Dark teal color */
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .view-all-button a{
+    color: white;
+    text-decoration: none;
+  }
+
+  .view-all-button:hover {
+    background-color: #18363f2; /* Slightly darker teal */
+    transform: scale(1.05);
+  }
+  
+  .email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px; /* Adjust as needed */
+    margin-bottom: 0px;
+    margin-left: 500px;
+    width: 320px;
+background-color:#184e56;
+border-radius: 14px;
+border-color: white;
+padding: 0%;
+  }
+  
+  /* Button styling */
+  .email-button {
+    background-color: #184e56; /* Dark teal color */
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    padding: 0px;
+
+  }
+  .email-button a{
+    color: white;
+    text-decoration: none;
+    padding: 0%;
+  }
+  
+  /* Button hover effect */
+  .email:hover {
+    background-color: #184e56; /* Slightly darker teal */
+    transform: scale(1.05);
+  }
+  /* General Footer Styling */
+.footer {
+    background-color: #184e56;
+    color: white;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .newsletter-section {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .newsletter-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .newsletter-input {
+    display: inline-flex;
+    align-items: center;
+    margin: 10px 0;
+  }
+  
+  .newsletter-input input {
+    padding: 10px;
+    border: 2px solid #ffffff;
+    border-radius: 50px 0 0 50px;
+    outline: none;
+    width: 250px;
+    font-size: 14px;
+  }
+  
+  .newsletter-input button {
+    background-color: white;
+    color: #184e56;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 0 50px 50px 0;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .newsletter-section p {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  .footer-links {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+  
+  .footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+  }
+  
+  .footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-column ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    margin-left: 50px;
+  }
+  
+  .footer-column ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-logo {
+    text-align: center;
+  }
+  
+  .footer-logo img {
+    width: 150px;
+    height: 100px;
+  }
+.footer-column p {
+    margin-left: 50px;
+}  
+  .newsletter-section h2 {
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
